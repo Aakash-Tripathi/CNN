@@ -1,13 +1,30 @@
 # CNN
 This repo contains a CNN implementation for the Linear and Matrix Algebra Course
-pavan
 
-## Resources
+## How to run
 
-1. https://arxiv.org/pdf/1609.04112.pdf 
-2. https://medium.com/secure-and-private-ai-math-blogging-competition/cnn-maths-behind-cnn-910eab425b5d 
-3. https://towardsdatascience.com/gentle-dive-into-math-behind-convolutional-neural-networks-79a07dd44cf9 
-4. https://www.analyticsvidhya.com/blog/2020/02/mathematics-behind-convolutional-neural-network/ 
-5. https://hackernoon.com/the-full-story-behind-convolutional-neural-networks-and-the-math-behind-it-2j4fk3zu2
-6. https://poloclub.github.io/cnn-explainer/
-7. https://andrew.gibiansky.com/blog/machine-learning/convolutional-neural-networks/
+1. Clone the repo
+2. Install the requirements with `pip install -r requirements.txt`
+3. Open the pytorch.ipynb file with jupyter notebook
+4. Run the cells in order
+
+__Note:__ The code is not optimized and is not meant to be used in production, it is just a simple implementation of a CNN for the Linear and Matrix Algebra Course. Hence, it may contain bugs and errors especially when not trained using a GPU.
+
+## File Structure and Description
+
+    ├── data                    # Contains the MNIST dataset
+    ├── docs                    # Documentation of the project
+    ├── models                  # Trained models
+    ├── src                     # Source code
+    │   ├── lib                 # Library code for the project (CNN implementation)
+    │   |   ├── data.py         # Code for loading the MNIST dataset and preprocessing it
+    │   |   ├── model.py        # CNN model
+    │   └── pytorch.ipynb       # Main file for the project
+    ├── .gitignore              # Files to be ignored by git
+    ├── README.md               # This file
+    └── requirements.txt        # Requirements for the project
+
+## References
+
+- [PyTorch](https://pytorch.org/)
+- [MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
