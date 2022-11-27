@@ -3,17 +3,15 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 # Source: https://github.com/pytorch/examples/blob/main/mnist/main.py
-class Net(nn.Module):
-    """ Convolutional Neural Network (two convolutional layers)
-
-    Args:
-
+class ConvNet(nn.Module):
+    """
+    Convolutional Neural Network (two convolutional layers)
     """
     def __init__(self):
-        super(Net, self).__init__()
+        super(ConvNet, self).__init__()
         self.conv1 = nn.Conv2d(1, 32, 3, 1)
         self.conv2 = nn.Conv2d(32, 64, 3, 1)
-        self.dropout1 = nn.Dropout(0.5)
+        self.dropout1 = nn.Dropout(0.25)
         self.dropout2 = nn.Dropout(0.5)
         self.fc1 = nn.Linear(9216, 128)
         self.fc2 = nn.Linear(128, 10)
@@ -32,3 +30,18 @@ class Net(nn.Module):
         x = self.fc2(x)
         output = F.log_softmax(x, dim=1)
         return output
+
+class FCNet(nn.Module):
+    """
+    Fully Connected Neural Network (two fully connected layers)
+    """
+    # 2 fully connected layers and two dropout layers
+    def __init__(self):
+        super(FCNet, self).__init__()
+        self.fc1 = nn.Linear(784, 128)
+        self.fc2 = nn.Linear(128, 10)
+    def forward(self, x):
+        x = x.view(-1, 784)
+        x = F.relu(self.fc1(x))
+        x = self.fc2(x)
+        return x
