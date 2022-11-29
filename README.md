@@ -27,3 +27,11 @@ __Note__: The code is written in Python 3.10.5 and was only trained using a GPU 
     ├── .gitignore              # Files to be ignored by git
     ├── README.md               # This file
     └── requirements.txt        # Requirements for the project
+
+## References
+
+    [1] Saad Albawi, Tareq Abed Mohammed, and Saad Al-Zawi. Understanding of a convolutional neural network. In 2017 International Conference on Engineering and Technology (ICET), pages 1–6, 2017. 
+    [2] Li Deng. The mnist database of handwritten digit images for machine learning research. IEEE Signal Processing Magazine, 29(6):141–142, 2012.
+    [3] Diederik P. Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In Yoshua Bengio and Yann LeCun, editors,3rd International Conference on Learning Representations, ICLR2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings, 2015.
+    [4] Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton. Imagenet classification with deep convolutional neural networks. In F. Pereira, C. J. C. Burges, L. Bottou, and K. Q. Weinberger, editors, Advances in Neural Information Processing Systems 25, pages 1097–1105. Curran Associates, Inc., 2012.
+    [5] R.E. Uhrig. Introduction to artificial neural networks. In Proceedings of IECON ’95 - 21st Annual Conference on IEEE Industrial Electronics, volume 1, pages 33–37 vol.1, 1995.
